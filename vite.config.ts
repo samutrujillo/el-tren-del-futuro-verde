@@ -52,8 +52,8 @@
       },
     },
     build: {
-      target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist', // IMPORTANTE: Vercel busca la carpeta 'dist' por defecto.
+      emptyOutDir: true,
     },
     server: {
       port: 3000,
